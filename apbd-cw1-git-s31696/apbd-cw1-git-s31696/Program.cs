@@ -20,3 +20,11 @@ static double CalculateAverage(int[] values)
 }
 
 Console.WriteLine(CalculateAverage(newtab));
+
+
+static int CalculateMax(int[] values)
+{
+    return values.Max();
+}
+
+Console.WriteLine(CalculateMax(newtab));
