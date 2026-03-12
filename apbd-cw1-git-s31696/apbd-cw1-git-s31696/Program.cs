@@ -8,5 +8,26 @@ for (int i = 0; i < 10; i++)
     newtab[i] = i;
 }
 
+static double CalculateAverage(int[] values)
+{
+    double sum = 0;
+    for (int i = 0; i < values.Length; i++)
+    {
+        sum += values[i];
+    }
+    
+    return sum / values.Length;
+}
+
+Console.WriteLine(CalculateAverage(newtab));
+
+
+static int CalculateMax(int[] values)
+{
+    return values.Max();
+}
+
+Console.WriteLine(CalculateMax(newtab));
+
 
 Console.WriteLine("branch main");
